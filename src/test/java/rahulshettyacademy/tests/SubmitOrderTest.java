@@ -65,7 +65,8 @@ public class SubmitOrderTest extends BaseTest{
 		Assert.assertTrue(ordersPage.VerifyOrderDisplay(productName));
 		System.out.println("UPDATES NEW 11");
 		System.out.println("UPDATES NEW 12");
-		
+		System.out.println("develop update 1");
+		System.out.println("develop update 2");
 }
 	
 
