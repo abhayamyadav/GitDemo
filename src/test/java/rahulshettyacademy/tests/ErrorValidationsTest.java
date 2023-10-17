@@ -65,6 +65,22 @@ public class ErrorValidationsTest extends BaseTest {
 	
 
 	}
+	
+	@Test
+	public void ProductErrorValidationDevelopFinal() throws IOException, InterruptedException
+	{
+
+		String productName = "ZARA COAT 3";
+		ProductCatalogue productCatalogue = landingPage.loginApplication("rahulshetty@gmail.com", "Iamking@000");
+		List<WebElement> products = productCatalogue.getProductList();
+		productCatalogue.addProductToCart(productName);
+		CartPage cartPage = productCatalogue.goToCartPage();
+		Boolean match = cartPage.VerifyProductDisplay("ZARA COAT 33");
+		Assert.assertFalse(match);
+		
+	
+
+	}
 
 	
 	
